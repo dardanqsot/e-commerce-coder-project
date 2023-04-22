@@ -1,0 +1,50 @@
+[
+    {
+      "id": "1",
+      "nombre": "JBL Tune 760NC ",
+      "estilo": "Oficina",
+      "precio": 99,
+      "stock": 6,
+      "categoria": "Escritorio",
+      "tagline": "AUDIFONO JBL TUNE 760NC",
+      "url": "https://drive.google.com/uc?export=download&id=1-mFmSMaHkUArMO77zPX2KhrLVtQslMLC",
+      "descripcion": "AUDIFONO JBL TUNE 760NC - DURACION 50 HORAS - NEGRO.",
+      "descripcionComplemento": "Tu música, nada más importa. Los JBL Tune 760NC, integrales, supercómodos y potentes, cumplen la promesa. La cancelación de ruido activa bloquea las distracciones innecesarias para que te centres en lo que importa, hasta 35 horas."
+    },
+    {
+      "id": "2",
+      "nombre": "LOGITECH STREAMCAM",
+      "estilo": "Oficina",
+      "precio": 138,
+      "stock": 10,
+      "categoria": "Escritorio",
+      "tagline": "Cámara Web Logitech StreamCam Plus 1080p, 60 fps USB C Negro.",
+      "url": "https://drive.google.com/uc?export=download&id=1lV_V9PbiKabvnCcv-AKATmmmvKAbNsXn",
+      "descripcion": "Capture desbloquea funciones en StreamCam que automatizan la exposición, el encuadre, la estabilización y mucho más.",
+      "descripcionComplemento": "Desde el fabricante StreamCam Una potente combinación Logitech StreamCam es aún más potente cuando se utiliza con Logitech Capture."
+    },
+    {
+      "id": "3",
+      "nombre": "Magic Wand Pro K587",
+      "estilo": "Gamer",
+      "precio": 85,
+      "stock": 9,
+      "categoria": "Escritorio",
+      "tagline": "Teclado gamer Redragon mecánico óptico switch Rojo Magic Wand Pro K587 Negro",
+      "url": "https://drive.google.com/uc?export=download&id=1LBNLuaRouWhifmYJ2dSXK90OOusfLf-a",
+      "descripcion": "¡No esperes más! Miles de productos, a los mejores precios",
+      "descripcionComplemento": "¡Siéntete como todo un profesional de los videojuegos con Redragon! La marca líder en tecnología ha desarrollado su nueva gama de Teclado Gaming para que puedas desplazarte con mayor comodidad y eficacia. Obtén ventaja desde el inicio de la partida con una presentación ergonómica y retroiluminada. Sincroniza tus habilidades con las de tu personaje favorito y pasa largas horas de entretenimiento superando obstáculos."
+    },
+    {
+      "id": "4",
+      "nombre": "MX MECHANICAL",
+      "estilo": "Oficina",
+      "precio": 125,
+      "stock": 13,
+      "categoria": "Escritorio",
+      "tagline": "clado bluetooth Logitech Master Series MX Mechanical Mini QWERTY español España color grafito con luz blanca",
+      "url": "https://drive.google.com/uc?export=download&id=1PvKardRWK0oJmLLSotxfVJ6bhJgJidtX",
+      "descripcion": "Innovadores en diseño y tecnología, Logitech se encarga de brindar la mejor experiencia de uso para sus usuarios.",
+      "descripcionComplemento": "pSus teclados resaltan por ser resistentes y muy de buena calidad, por lo que podrás disfrutarlos por un largo tiempo."
+    }
+  ]
