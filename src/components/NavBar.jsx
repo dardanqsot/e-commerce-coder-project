@@ -71,7 +71,7 @@ function NavBar({ cantidad, categoria }) {
 							</Link>
 							<ul className='dropdown-menu' aria-labelledby='navbarDropdown'>
 								<li>
-									<Link className='dropdown-item' to={`/categoria/${categoria}`} >
+									<Link className='dropdown-item' to={`/categoria/escritorio`} >
 										categoria1
 									</Link>
 								</li>
@@ -79,7 +79,7 @@ function NavBar({ cantidad, categoria }) {
 									<hr className='dropdown-divider' />
 								</li>
 								<li>
-									<Link className='dropdown-item' to={`/categoria/${categoria}`}>
+									<Link className='dropdown-item' to={`/categoria/gamer`}>
 										categoria2
 									</Link>
 								</li>
@@ -93,7 +93,7 @@ function NavBar({ cantidad, categoria }) {
 							</Link>
 						</li>
 					</ul>
-					<CartWidget cantidad={cantidad} />
+					<CartWidget/>
 				</div>
 			</div>
 		</nav>

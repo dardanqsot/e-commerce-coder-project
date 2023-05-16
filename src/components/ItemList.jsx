@@ -1,29 +1,29 @@
 import Item from './Item.jsx';
 //! Componente responsable de crear el listado de ITEMs. Usando las informaciones del componente ITEM, es hecho un mapeamento del objeto y luego retorna todos estos datos separados por props.
 
-//. Funcion para mapear el objeto. Retorna un array (estilos) con todos los datos de cada item. Cada dato de cada item es guardado en la variable estilo y luego podemos acceder a todos sus valores a traves del .valor.
-function ItemList({ estiloList, onAdd, sumarCarrito }) {
+//. Funcion para mapear el objeto. Retorna un array (productos) con todos los datos de cada item. Cada dato de cada item es guardado en la variable estilo y luego podemos acceder a todos sus valores a traves del .valor.
+function ItemList({ productoList, onAdd, categoria }) {
 
 
 	return (
 		<>
-			<div className='d-flex'>
-				{estiloList?.map((estilo) => {
+			<div className='container col-sm-12 col-lg-12 d-flex flex-row justify-content-around flex-wrap'>
+				{productoList?.map((producto) => {
 					return (
 						<Item
-							precio={estilo.precio}
-							estilo={estilo.estilo}
-							tagline={estilo.tagline}
-							imagen={estilo.url}
-							id={estilo.id}
+							precio={producto.precio}
+							nombre={producto.nombre}
+							tipo={producto.tipo}
+							tagline={producto.tagline}
+							imagen={producto.url}
+							id={producto.id}
 							onAdd={onAdd}
-                            categoria={estilo.categoria}
-							stock={estilo.stock}
+                            categoria={categoria}
+							stock={producto.stock}
 							initial={1}
-							max={estilo.stock}
-							agregarCantidad={sumarCarrito}
-							descripcion={estilo.descripcion}
-							key={estilo.id}
+							max={producto.stock}
+							descripcion={producto.descripcion}
+							key={producto.id}
 						/>
 					);
 				})}
@@ -31,4 +31,5 @@ function ItemList({ estiloList, onAdd, sumarCarrito }) {
 		</>
 	);
 }
+
 export default ItemList;

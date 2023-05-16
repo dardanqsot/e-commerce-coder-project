@@ -3,7 +3,7 @@ import ItemCount from './ItemCount.jsx';
 function ItemDetail({ detalleProducto }) {
 	const {	nombre,
 		id,
-		estilo,
+		producto,
 		tagline,
 		url,
 		descripcion,
@@ -19,7 +19,7 @@ function ItemDetail({ detalleProducto }) {
 				<div className='producto_titulo text-center mt-3'>
 					<h2>{nombre}</h2>
 				</div>
-				<p className='text-center mt-1'>Tipo: {estilo}</p>
+				<p className='text-center mt-1'>Tipo: {producto}</p>
 				<p className='text-center'>{tagline}</p>
 				<div className='cuerpo_info'>
 					<div className='row'>

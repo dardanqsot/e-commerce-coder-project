@@ -8,7 +8,7 @@ function ItemDetailContainer() {
 		fetch('../../productos.json')
 			.then((resultado) => resultado.json())
 			.then((resultado) => {
-				setDetalleProducto(resultado.find(item => item.id == id));
+				setDetalleProducto(resultado.find(item => item.id === id));
 			})
 			.catch((error) => console.log('Error', error));
 

@@ -101,7 +101,7 @@ function ItemCount({ max, precio, initial, id, agregarCantidad }) {
 						onClick={() => {
 							validarStock();
 						}}>
-						<p class="text-white">Agregar al Carrito</p>
+						<p className="text-white">Agregar al Carrito</p>
 						
 					</button>
 						<p className='fw-bold'> Disponibilidad {stock} Unidades</p>

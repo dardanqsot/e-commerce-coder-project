@@ -10,7 +10,7 @@ function Item({
 	onAdd,
 	max,
 	agregarCantidad,
-	estilo,
+	producto,
 	imagen,
 	tagline,
 	descripcion,
@@ -27,7 +27,7 @@ function Item({
 				<div className='container-fluid'>
 					<div className='cardProductos m-3 d-flex'>
 						<div className='card-body text-center mt-3'>
-							<h5 className='card-title fw-bolder'> {estilo} </h5>
+							<h5 className='card-title fw-bolder'> {producto} </h5>
 							<p className='card-text'> {tagline} </p>
 							<img src={imagen} className='card-img-top' alt='...' />
 							<div className='item_descripcion'>
