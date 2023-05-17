@@ -1,36 +1,42 @@
+import { useState } from 'react';
 import '../css/ItemDetail.css';
 import ItemCount from './ItemCount.jsx';
+
 function ItemDetail({ detalleProducto }) {
-	const {	nombre,
+	const [cantidad, setCantidad] = useState(1);
+
+	const {
+		nombre,
 		id,
-		producto,
+		tipo,
 		tagline,
 		url,
 		descripcion,
 		descripcion_complemento,
-    	stock,
-		onAdd,
+		stock,
 		precio,
-		agregarCantidad,} = detalleProducto;
+	} = detalleProducto;
 
 	return (
 		<>
-			<div className='itemDetail' key={id}>
+			<div className='itemDetail container-fluid' key={id}>
 				<div className='producto_titulo text-center mt-3'>
 					<h2>{nombre}</h2>
 				</div>
-				<p className='text-center mt-1'>Tipo: {producto}</p>
-				<p className='text-center'>{tagline}</p>
+				<div className='text-center'>
+					<p className='text-center mt-1'>Tipo: {tipo}</p>
+					<p className='text-center'>{tagline}</p>
+				</div>
 				<div className='cuerpo_info'>
 					<div className='row'>
-						<div className='producto_img justify-content-end align-items-center d-flex col-6 flex-column'>
+						<div className='producto_img justify-content-end align-items-center col-sm-12 col-lg-6 d-flex flex-column'>
 							<img src={url} alt='' className='img-card' />
 							<div className='descripcion_detail text-justify'>
 								<p className='text-center font-italic'>{descripcion}</p>
 								<p className='text-center'>{descripcion_complemento}</p>
 							</div>
 						</div>
-						<div className='datos_extras col-6 d-flex flex-column align-items-center justify-content-center'>
+						<div className='datos_extras col-sm-12 col-lg-6 d-flex flex-column justify-content-start align-items-centers'>
 							<p className='text-center'>
 								Entregas a todo el pais hasta en 48h
 							</p>
@@ -41,8 +47,9 @@ function ItemDetail({ detalleProducto }) {
 									id={id}
 									initial={1}
 									max={stock}
-									onAdd={onAdd}
-									agregarCantidad={agregarCantidad}
+									cantidad={cantidad}
+									setCantidad={setCantidad}
+									detalleProducto={detalleProducto}
 								/>
 							</div>
 						</div>

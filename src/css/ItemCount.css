@@ -50,7 +50,7 @@
 .btn-unite .liquid::before {
 	border-radius: 45%;
 	background: rgba(256, 256, 256, 1);
-	animation: animate 5s linear infinite;
+	animation: animate 3s linear infinite;
 }
 
 .btn-unite .liquid::after {
@@ -65,10 +65,10 @@
 
 @keyframes animate {
 	0% {
-		transform: translate(-50%, -75%) rotate(0deg);
+		transform: translate(-50%, -75%);
 	}
 
 	100% {
-		transform: translate(-50%, -75%) rotate(360deg);
+		transform: translate(-50%, -85%);
 	}
 }

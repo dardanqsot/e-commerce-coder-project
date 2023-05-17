@@ -1,8 +1,9 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import "./App.css";
 import Carrito from "./components/Carrito";
+import Checkout from './components/Checkout';
 import CartContextProvider from './components/context/CartContextProvider.jsx';
-
+import Contacto from './components/Contacto';
 import Footer from "./components/Footer";
 import Home from "./components/Home.jsx";
 import ItemDetailContainer from "./components/ItemDetailContainer";
@@ -26,6 +27,8 @@ function App() {
           <Route path="/producto/:id" element={<ItemDetailContainer />} />
           <Route path="/cart" element={<Carrito />} />
 
+		  <Route path='cart/checkout' element={<Checkout />} />
+		  <Route path='/home/contacto' element={<Contacto />} />
           <Route path="*" element={<Home />} />
         </Routes>
         <Footer />

@@ -71,16 +71,16 @@ function NavBar({ cantidad, categoria }) {
 							</Link>
 							<ul className='dropdown-menu' aria-labelledby='navbarDropdown'>
 								<li>
-									<Link className='dropdown-item' to={`/categoria/escritorio`} >
-										categoria1
+									<Link className='dropdown-item' to={`/categoria/Escritorio`} >
+										Escritorio
 									</Link>
 								</li>
 								<li>
 									<hr className='dropdown-divider' />
 								</li>
 								<li>
-									<Link className='dropdown-item' to={`/categoria/gamer`}>
-										categoria2
+									<Link className='dropdown-item' to={`/categoria/Gamer`}>
+										Gamer
 									</Link>
 								</li>
 							</ul>

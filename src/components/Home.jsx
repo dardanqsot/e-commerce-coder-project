@@ -1,4 +1,3 @@
-import { useState } from 'react';
 import ItemListContainer from './ItemListContainer.jsx';
 import ItemDetailContainer from './ItemDetailContainer.jsx';
 
